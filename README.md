@@ -96,6 +96,16 @@ The compress Grunt task packages the theme files into `dist/<theme-name>.zip`, w
 ````bash
 grunt compress
 ````
+
+## 🧩 Fork Notes
+
+This fork keeps customizations in `src/sass/` so they are part of the build output:
+
+````text
+src/sass/_listing-cards.scss
+````
+
+`_listing-cards.scss` adds image previews to the homepage post list. Font loading is also kept local in `src/sass/_fonts.scss` to avoid external requests.
 ## ⚖️ Copyright & License
 
 Copyright (C) 2015-2024 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).
