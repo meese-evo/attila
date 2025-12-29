@@ -109,18 +109,18 @@ textarea {
 		font-weight: inherit;
 	}
 
-	p {
-		font-family: var(--font-secondary);
-		margin: 0 0 4rem;
-	}
+        p {
+                font-family: var(--font-secondary);
+                margin: 0 0 2.75rem;
+        }
 
-	ol,
-	ul {
-		font-family: var(--font-secondary);
-		margin: 0 0 4rem;
-		padding-left: 2em;
-		box-sizing: border-box;
-	}
+        ol,
+        ul {
+                font-family: var(--font-secondary);
+                margin: 0 0 2.75rem;
+                padding-left: 1.75em;
+                box-sizing: border-box;
+        }
 
 	ol {
 		list-style-type: none;
@@ -135,18 +135,18 @@ textarea {
 		}
 	}
 
-	ol > li:before,
-	ul > li:before {
-		position: absolute;
-		width: 1.5em;
-		margin-left: -2em;
-		font-size: 1em;
-		font-weight: 500;
-		line-height: 2em;
-		text-align: right;
-		color: var(--ghost-accent-color);
-		font-family: var(--font-primary);
-	}
+        ol > li:before,
+        ul > li:before {
+                position: absolute;
+                width: 1.25em;
+                margin-left: -1.6em;
+                font-size: 1em;
+                font-weight: 500;
+                line-height: 1.8em;
+                text-align: right;
+                color: var(--ghost-accent-color);
+                font-family: var(--font-primary);
+        }
 
 	ul > li:before {
 		margin-top: -1px;
@@ -158,13 +158,13 @@ textarea {
 		counter-increment: item;
 	}
 
-	ol ol,
-	ol ul,
-	ul ol,
-	ul ul {
-		padding-left: 30px;
-		margin: 15px 0;
-	}
+        ol ol,
+        ol ul,
+        ul ol,
+        ul ul {
+                padding-left: 1.25em;
+                margin: 1rem 0;
+        }
 
 	hr {
 		display: block;
