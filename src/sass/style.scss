@@ -3,7 +3,9 @@
    ========================================================================== */
 @use "normalize";
 @use "colors";
+@use "fonts";
 @use "highlight";
+@use "listing-cards";
 $breakpoint-large: 960px;
 $breakpoint-medium: 640px;
 $breakpoint-small: 480px;
@@ -15,6 +17,11 @@ $inner: calc(64rem + 8vw);
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
+}
+
+:root {
+	--gh-font-body: "Fira Sans", sans-serif;
+	--gh-font-heading: "Libre Baskerville", serif;
 }
 
 .menu-active body,
