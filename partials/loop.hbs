@@ -20,6 +20,11 @@
 				{{t "on"}}
 				<time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
 			</span>
+			{{#if feature_image}}
+				<a href="{{url}}" class="post-image">
+					<img src="{{img_url feature_image size="m"}}" alt="{{title}}">
+				</a>
+			{{/if}}
 			<p class="post-excerpt">{{excerpt}}&hellip;</p>
 		</div>
 	</div>
