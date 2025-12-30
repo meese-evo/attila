@@ -20,8 +20,8 @@ html {
 }
 
 :root {
-	--gh-font-body: "Fira Sans", sans-serif;
-	--gh-font-heading: "Libre Baskerville", serif;
+	--gh-font-body: "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+	--gh-font-heading: "Libre Baskerville Local", "Libre Baskerville", Georgia, serif;
 }
 
 .menu-active body,
@@ -40,6 +40,21 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
 	background: var(--color-background-main);
+}
+
+.blog-name,
+.post-title,
+.post-meta,
+.post-info .post-type,
+.post-excerpt,
+.post-excerpt a {
+	font-family: var(--gh-font-body);
+}
+
+.blog-description,
+.post-title a,
+.post-content {
+	font-family: var(--gh-font-heading);
 }
 
 button,
