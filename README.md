@@ -15,6 +15,18 @@ Attila is a clean, content-focused responsive theme for [Ghost](https://github.c
 * Comments and Disqus (Theme option)
 * Ghost accent color and custom fonts
 
+## Local Fonts
+
+This theme ships local font files in `assets/font/` and defines them in `src/sass/_fonts.scss`.
+The default Ghost typography selector should remain on `Default` to avoid external CDN fonts.
+Font assignment is controlled via `--gh-font-body` and `--gh-font-heading` in `src/sass/style.scss`.
+Small, maintainable overrides live in `src/sass/_overrides.scss` (e.g. navigation font family).
+
+## Listing Cards
+
+Listing image sizing is tuned in `src/sass/_listing-cards.scss` using `clamp()` to keep images
+proportional across screen sizes while staying close to the upstream layout.
+
 ## Localization
 
 🟢 Up to date  🟡 Missing strings
