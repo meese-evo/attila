@@ -1,0 +1,17 @@
+/* Minimal overrides to keep upstream styles intact.
+   This remaps post meta text and navigation chrome to the heading font
+   (Fira Sans) while leaving the rest of the theme on standard variables. */
+.post-meta {
+  font-family: var(--gh-font-heading);
+}
+
+.nav-header,
+.nav-footer {
+  font-family: var(--gh-font-heading);
+}
+
+.nav-header .nav-wrapper-control,
+.nav-header .nav-members,
+.nav-footer .nav-wrapper {
+  font-family: var(--gh-font-heading);
+}

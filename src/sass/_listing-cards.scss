@@ -4,7 +4,8 @@
 /* Minimal additions for post list images to avoid diverging from core styles */
 .post .post-image {
   display: block;
-  margin: 2rem 0 0;
+  margin: 2rem auto 0;
+  max-width: clamp(480px, 70%, 720px);
   overflow: hidden;
   border-radius: 5px;
 }
