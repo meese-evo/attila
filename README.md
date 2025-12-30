@@ -24,8 +24,16 @@ Small, maintainable overrides live in `src/sass/_overrides.scss` (e.g. navigatio
 
 ## Listing Cards
 
-Listing image sizing is tuned in `src/sass/_listing-cards.scss` using `clamp()` to keep images
-proportional across screen sizes while staying close to the upstream layout.
+Listing image sizing is tuned in `src/sass/_listing-cards.scss` using `clamp()` so cards stay
+proportional across breakpoints without diverging from the upstream layout.
+
+## Local Customizations (Non-Upstream Files)
+
+These files contain project-specific changes to keep upstream updates low-friction and traceable:
+- `src/sass/_fonts.scss`: local `@font-face` definitions for Libre Baskerville and Fira Sans.
+- `assets/font/`: the corresponding local font files.
+- `src/sass/_listing-cards.scss`: listing card image sizing tweaks using `clamp()` for stable proportions.
+- `src/sass/_overrides.scss`: focused style overrides (e.g. UI in Fira Sans, article content in serif).
 
 ## Localization
 
