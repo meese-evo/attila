@@ -2,7 +2,7 @@
 
 Attila is a clean, content-focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). You can see it live [here](https://attila.peteramende.de/). If you find it useful and want to support its development, feel free to [tip](https://paypal.me/zutrinken) or contribute. Thank you for your support!
 
-<img src="https://raw.githubusercontent.com/zutrinken/attila/master/src/screenshot.webp" />
+<img src="src/screenshot.webp" />
 
 ## Features
 
@@ -26,6 +26,7 @@ Small, maintainable overrides live in `src/sass/_overrides.scss` (e.g. navigatio
 
 Listing image sizing is tuned in `src/sass/_listing-cards.scss` using `clamp()` so cards stay
 proportional across breakpoints without diverging from the upstream layout.
+<img src="src/screenshot-listing.png" />
 
 ## Local Customizations (Non-Upstream Files)
 
@@ -78,6 +79,11 @@ These files contain project-specific changes to keep upstream updates low-fricti
 
 ## Development
 
+If you use nvm, a current Node.js LTS release (18 or 20) is recommended:
+````bash
+nvm install 18
+nvm use 18
+````
 Install [Grunt](https://gruntjs.com/getting-started/):
 ````bash
 npm install -g grunt-cli
@@ -86,6 +92,12 @@ Install dependencies:
 ````bash
 npm install
 ````
+Alternatively, you can do a clean, lockfile-based install (especially on CI):
+````bash
+npm ci
+````
+This installs exact versions from `package-lock.json` into a fresh `node_modules/` folder.
+Run it once per environment, or again after dependency or lockfile changes.
 Build project:
 ````bash
 grunt build
@@ -93,6 +105,16 @@ grunt build
 The compress task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
 ````bash
 grunt compress
+````
+After running it, the zip is available at `dist/attila.zip`.
+You can also run Grunt without a global install:
+````bash
+npx grunt build
+npx grunt compress
+````
+If install steps fail with `node-gyp` errors, you may need to point npm at a local Python 3:
+````bash
+export npm_config_python="/opt/homebrew/opt/python@3.11/bin/python3.11"
 ````
 ## ⚖️ Copyright & License
 
